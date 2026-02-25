@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Fibonacci</title>
+  </head>
+  <body>
+    <div>
+      <h2>Fibonacci Series</h2>
+      <input type="text" id="input" readonly />
+      <h1 id="sum"></h1>
+    </div>
+
+    <div>
+      <button onclick="fibStart()">Start</button>
+      <button onclick="fibEnd()">End</button>
+    </div>
+
+    <script>
+      let a = 0;
+      let b = 1;
+      let isRunning = false;
+      let interval = null;
+      let totalSum = 0;
+
+      const fibStart = () => {
+        if (isRunning) return;
+
+        isRunning = true;
+        a = 0;
+        b = 1;
+        totalSum = 0;
+
+        document.getElementById("input").value = "";
+        document.getElementById("sum").innerHTML = "";
+
+        interval = setInterval(() => {
+          document.getElementById("input").value += a + " ";
+          totalSum += a;
+
+          let temp = a + b;
+          a = b;
+          b = temp;
+        }, 1000);
+      };
+
+      const fibEnd = () => {
+        clearInterval(interval);
+        isRunning = false;
+        document.getElementById("sum").innerHTML = "Sum: " + totalSum;
+      };
+
+      //using setTimeout
+
+      // let a = 0;
+      // let b = 1;
+      // let totalSum = 0;
+      // let isRunning = false;
+      // let timeoutId = null;
+
+      // function fibStart() {
+      //   if (isRunning) return;
+
+      //   isRunning = true;
+      //   a = 0;
+      //   b = 1;
+      //   totalSum = 0;
+
+      //   document.getElementById("input").value = "";
+      //   document.getElementById("sum").innerHTML = "";
+
+      //   generate();
+      // }
+
+      // function generate() {
+      //   if (!isRunning) return;
+
+      //   document.getElementById("input").value += a + " ";
+      //   totalSum += a;
+
+      //   let temp = a + b;
+      //   a = b;
+      //   b = temp;
+
+      //   timeoutId = setTimeout(generate, 1000);
+      // }
+
+      // function fibEnd() {
+      //   isRunning = false;
+      //   clearTimeout(timeoutId);
+      //   document.getElementById("sum").innerHTML = "Sum: " + totalSum;
+      // }
+
+      //Using the For loop
+
+      // let isRunning = false;
+      // let totalsum = 0;
+
+      // async function fibStart() {
+      //   if (isRunning) return;
+
+      //   isRunning = true;
+
+      //   let a = 0;
+      //   let b = 1;
+      //   totalSum = 0;
+
+      //   document.getElementById("input").value = "";
+      //   document.getElementById("sum").innerHTML = "";
+
+      //   while (isRunning) {
+      //     document.getElementById("input").value += a + " ";
+      //     totalSum += a;
+
+      //     let temp = a + b;
+      //     a = b;
+      //     b = temp;
+
+      //     await new Promise((resolve) => setTimeout(resolve, 1000));
+      //   }
+      // }
+
+      // function fibEnd() {
+      //   isRunning = false;
+      //   document.getElementById("sum").innerHTML = "Sum: " + totalSum;
+      // }
+    </script>
+  </body>
+</html>
