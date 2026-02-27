@@ -6,6 +6,7 @@ function Home() {
     "Text Analizer",
     "Share Calculation",
     "Ticket Booking",
+    "",
   ];
 
   return (
