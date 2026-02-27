@@ -2,16 +2,16 @@ import "./Home.css";
 
 function Home() {
   const projects = [
-    "Gym Management System (PHP)",
-    "Employee Management System (Java + JDBC)",
-    "School Management System (JSP + Servlet)",
-    "Spring Boot Car Engine API",
+    "Todo List",
+    "Text Analizer",
+    "Share Calculation",
+    "Ticket Booking",
   ];
 
   return (
     <div className="home">
       <h1>Welcome to My Projects</h1>
-      <p>I am Rizwan Ansari - Java Full Stack Developer</p>
+      <p>I am Rizwan Ansari - Full Stack Developer</p>
 
       <h2>My Projects</h2>
 
