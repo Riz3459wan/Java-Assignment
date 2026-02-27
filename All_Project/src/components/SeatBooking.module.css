@@ -1,0 +1,82 @@
+.container {
+  width: 450px;
+  margin: 50px auto;
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+  background: #ccc;
+  color: black;
+  width: 70%;
+  margin: 20px auto;
+  padding: 8px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-weight: bold;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.box {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border-radius: 3px;
+}
+
+.available {
+  background: #e5e7eb;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 6px 0;
+}
+
+.seat {
+  width: 22px;
+  height: 22px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat:hover {
+  transform: scale(1.1);
+}
+
+.selected {
+  background: #6366f1;
+  color: white;
+}
+
+.taken {
+  background: #374151;
+  cursor: not-allowed;
+}
+
+.bottom {
+  margin-top: 20px;
+  padding: 12px;
+  background: #111827;
+  border-radius: 8px;
+}

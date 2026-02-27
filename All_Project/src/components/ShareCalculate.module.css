@@ -1,0 +1,84 @@
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.tipButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+.active {
+  background: orange;
+  color: white;
+  border: none;
+}
+
+.custom {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.personBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.personBtn {
+  padding: 5px 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.round {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.result {
+  background: #111;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.result div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.final h3 {
+  color: orange;
+}

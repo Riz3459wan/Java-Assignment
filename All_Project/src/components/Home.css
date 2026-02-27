@@ -1,0 +1,21 @@
+.home {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.home h1 {
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  margin-top: 30px;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
