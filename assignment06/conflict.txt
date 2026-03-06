@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-Feature change
-=======
-Develop change
->>>>>>> develop
